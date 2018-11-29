@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
 
   <body>
@@ -30,37 +31,43 @@
       <section class="form">
         <div class="field">
           <div class="label">Produto</div>
-          <input type="text" />
+          <input type="text" class="input"/>
+          <small class="validation-message hide">Campo obrigatório</small>
         </div>
 
         <div class="field">
           <div class="label">Embalagem</div>
-          <input type="text" />
+          <input type="text" class="input"/>
+          <small class="validation-message hide">Campo obrigatório</small>
         </div>
 
         <div class="field">
           <div class="label">Unidade de Medida</div>
-          <select>
+          <select class="input">
             <option>Selecione</option>
             <option>Unidade</option>
             <option>Grama</option>
             <option>Mililitro</option>
           </select>
+          <small class="validation-message hide">Campo obrigatório</small>
         </div>
 
         <div class="field">
           <div class="label">Preço Unitário</div>
-          <input type="text" />
+          <input type="text" class="input"/>
+          <small class="validation-message hide">Campo obrigatório</small>
         </div>
 
         <div class="field">
           <div class="label">Preço Por Embalagem</div>
-          <input type="text" />
+          <input type="text" class="input"/>
+          <small class="validation-message hide">Campo obrigatório</small>
         </div>
 
         <div class="field">
           <div class="label">Quantidade</div>
-          <input type="text" />
+          <input type="text" class="input"/>
+          <small class="validation-message hide">Campo obrigatório</small>
         </div>
 
         <div class="field">
@@ -74,11 +81,11 @@
         </div>
 
         <div class="full-button">
-          <button>Adicionar</button>
+          <button id="btn-add">Adicionar</button>
         </div>
       </section>
     </section>
 
-    <!-- <script src="main.js"></script> -->
+    <script src="index.js"></script>
   </body>
 </html>
