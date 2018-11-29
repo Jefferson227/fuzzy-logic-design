@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #faebd6;
+}
+
+.content {
+  margin: 80px 10px 0 10px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #0abab5;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar .elements {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  font-size: 22px;
+}
+
+.navbar .elements .element.title {
+  font-family: 'Lobster', cursive;
+}
+
+.content .form {
+  margin-bottom: 16px;
+}
+
+.content .form .label {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: bold;
+  color: #585245;
+  margin-bottom: 7px;
+}
+
+.content .form .field {
+  margin-bottom: 10px;
+}
+
+.content .form input,
+.content .form select,
+.content .form textarea {
+  border: 0px;
+  width: 100%;
+  height: 25px;
+  box-sizing: border-box;
+  border: 1px solid #c5bfb0;
+  border-radius: 3px;
+}
+
+.content .form textarea {
+  height: 77px;
+}
+
+.content .form .full-button {
+  text-align: center;
+}
+
+.content .form .full-button button {
+  border: 0;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  background-color: #698dd8;
+  color: white;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 16px;
+  border-radius: 5px;
+}
