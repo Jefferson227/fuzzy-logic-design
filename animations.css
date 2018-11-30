@@ -1,0 +1,10 @@
+@keyframes toast-show-up {
+  from {
+    top: -70px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
