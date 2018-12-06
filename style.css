@@ -1,17 +1,3 @@
-html::before {
-  content: '';
-  background-color: black;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 15;
-  opacity: 0.5;
-  height: 100%;
-  width: 100%;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -40,7 +26,22 @@ body {
   animation-fill-mode: forwards;
 }
 
-section.modal {
+section.modal .modal-black-background::before {
+  content: '';
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 15;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+section.modal .modal-content {
   position: fixed;
   top: 16%;
   z-index: 20;
@@ -51,11 +52,11 @@ section.modal {
   border-radius: 7px;
 }
 
-section.modal .header {
+section.modal .modal-content .header {
   text-align: center;
 }
 
-section.modal .body {
+section.modal .modal-content .body {
   padding: 0 37px;
   margin-bottom: 27px;
   font-family: 'Roboto', sans-serif;
@@ -63,7 +64,7 @@ section.modal .body {
   text-align: center;
 }
 
-section.modal .footer .decision-button {
+section.modal .modal-content .footer .decision-button {
   border: 0;
   border-radius: 6px;
   font-size: 20px;
@@ -71,7 +72,7 @@ section.modal .footer .decision-button {
   cursor: pointer;
 }
 
-section.modal .footer .decision-button.yes-button {
+section.modal .modal-content .footer .decision-button.yes-button {
   background-color: #64ff64;
   color: white;
 }
