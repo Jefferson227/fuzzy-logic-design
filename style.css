@@ -1,3 +1,17 @@
+html::before {
+  content: '';
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 15;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -24,6 +38,53 @@ body {
 .toast div.hide-toast {
   animation: toast-hide 0.5s;
   animation-fill-mode: forwards;
+}
+
+section.modal {
+  position: fixed;
+  top: 16%;
+  z-index: 20;
+  background-color: white;
+  width: 90%;
+  left: 5%;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  border-radius: 7px;
+}
+
+section.modal .header {
+  text-align: center;
+}
+
+section.modal .body {
+  padding: 0 37px;
+  margin-bottom: 27px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  text-align: center;
+}
+
+section.modal .footer .decision-button {
+  border: 0;
+  border-radius: 6px;
+  font-size: 20px;
+  padding: 4px 15px;
+  cursor: pointer;
+}
+
+section.modal .footer .decision-button.yes-button {
+  background-color: #64ff64;
+  color: white;
+}
+
+section.modal .footer .decision-button.no-button {
+  background-color: red;
+  color: white;
+}
+
+section.modal .footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 16px 20px;
 }
 
 .hide {
