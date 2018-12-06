@@ -26,6 +26,10 @@ body {
   animation-fill-mode: forwards;
 }
 
+section.modal.hide-modal {
+  display: none;
+}
+
 section.modal .modal-black-background::before {
   content: '';
   background-color: black;
@@ -50,6 +54,7 @@ section.modal .modal-content {
   left: 5%;
   font-family: 'Alegreya Sans SC', sans-serif;
   border-radius: 7px;
+  animation: modal-show 0.5s;
 }
 
 section.modal .modal-content .header {

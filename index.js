@@ -23,3 +23,11 @@ document.getElementById('btn-show-toast').addEventListener('click', () => {
     toast.classList.add('hide-toast');
   }, 3000);
 });
+
+document.getElementById('btn-show-modal').addEventListener('click', () => {
+  document.getElementById('modal').classList.remove('hide-modal');
+});
+
+document.getElementById('btn-hide-modal').addEventListener('click', () => {
+  document.getElementById('modal').classList.add('hide-modal');
+});
