@@ -4,28 +4,6 @@ body {
   background-color: #faebd6;
 }
 
-.toast div {
-  position: fixed;
-  top: -70px;
-  z-index: 10;
-  width: 100%;
-  background-color: #048c04;
-  padding: 25px 0 25px 0;
-  font-family: 'Alegreya Sans SC', sans-serif;
-  color: white;
-  text-align: center;
-}
-
-.toast div.show-toast {
-  animation: toast-show 0.5s;
-  animation-fill-mode: forwards;
-}
-
-.toast div.hide-toast {
-  animation: toast-hide 0.5s;
-  animation-fill-mode: forwards;
-}
-
 .hide {
   display: none;
 }
