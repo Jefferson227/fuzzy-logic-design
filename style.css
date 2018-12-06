@@ -6,7 +6,7 @@ body {
 
 .toast div {
   position: fixed;
-  top: 0px;
+  top: -70px;
   z-index: 10;
   width: 100%;
   background-color: #048c04;
@@ -14,7 +14,16 @@ body {
   font-family: 'Alegreya Sans SC', sans-serif;
   color: white;
   text-align: center;
-  animation: toast-show-up 0.5s;
+}
+
+.toast div.show-toast {
+  animation: toast-show 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.toast div.hide-toast {
+  animation: toast-hide 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .hide {
@@ -97,4 +106,5 @@ body {
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 16px;
   border-radius: 5px;
+  margin-bottom: 8px;
 }

@@ -9,3 +9,17 @@ document.getElementById('btn-add').addEventListener('click', () => {
     fields[i].classList.add('red-border');
   }
 });
+
+document.getElementById('btn-show-toast').addEventListener('click', () => {
+  let toast = document.getElementById('toast');
+
+  if (toast.classList.contains('hide-toast'))
+    toast.classList.remove('hide-toast');
+
+  toast.classList.add('show-toast');
+
+  setTimeout(() => {
+    toast.classList.remove('show-toast');
+    toast.classList.add('hide-toast');
+  }, 3000);
+});
