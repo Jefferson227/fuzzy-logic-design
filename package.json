@@ -1,0 +1,31 @@
+{
+  "name": "fuzzy-logic-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "css-loader": "^1.0.1",
+    "express-favicon": "^2.0.1",
+    "script-loader": "^0.7.2",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --mode development --open",
+    "start": "webpack -p && node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jefferson227/fuzzy-logic-design.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jefferson227/fuzzy-logic-design/issues"
+  },
+  "homepage": "https://github.com/Jefferson227/fuzzy-logic-design#readme"
+}
