@@ -29,11 +29,15 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 16px;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 .navbar .elements .element.title {
   font-family: 'Lobster', cursive;
+}
+
+.navbar .elements .element.icon {
+  font-size: 31px;
 }
 
 .content .form {
