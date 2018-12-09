@@ -8,14 +8,15 @@ section.toast .toast-content {
   font-family: 'Alegreya Sans SC', sans-serif;
   color: white;
   text-align: center;
+
+  &.show-toast {
+    animation: toast-show 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  &.hide-toast {
+    animation: toast-hide 0.5s;
+    animation-fill-mode: forwards;
+  }
 }
 
-section.toast .toast-content.show-toast {
-  animation: toast-show 0.5s;
-  animation-fill-mode: forwards;
-}
-
-section.toast .toast-content.hide-toast {
-  animation: toast-hide 0.5s;
-  animation-fill-mode: forwards;
-}
