@@ -4,7 +4,8 @@ module.exports = {
     './src/animations.scss',
     './src/modal.scss',
     './src/toast.scss',
-    './src/style.scss'
+    './src/style.scss',
+    './src/busca.scss'
   ],
   output: {
     path: __dirname,
