@@ -1,10 +1,10 @@
 module.exports = {
   entry: [
     './src/index.js',
-    './src/animations.css',
-    './src/modal.css',
-    './src/toast.css',
-    './src/style.css'
+    './src/animations.scss',
+    './src/modal.scss',
+    './src/toast.scss',
+    './src/style.scss'
   ],
   output: {
     path: __dirname,
@@ -21,21 +21,11 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
+        test: /\.(s*)css$/,
         use: [
-          {
-            loader: "style-loader"
-          },
-          {
-            loader: "css-loader",
-            options: {
-              modules: true,
-              importLoaders: 1,
-              localIdentName: "[name]_[local]_[hash:base64]",
-              sourceMap: true,
-              minimize: true
-            }
-          }
+          "style-loader",
+          "css-loader",
+          "sass-loader"
         ]
       }
     ]
