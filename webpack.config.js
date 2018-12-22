@@ -5,7 +5,8 @@ module.exports = {
     './src/modal.scss',
     './src/toast.scss',
     './src/style.scss',
-    './src/busca.scss'
+    './src/busca.scss',
+    './src/receita.scss'
   ],
   output: {
     path: __dirname,

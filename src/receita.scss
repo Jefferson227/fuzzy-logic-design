@@ -1,0 +1,67 @@
+.content {
+  .header {
+    padding: 1em 0 1em 0;
+
+    .title {
+      font-family: 'Alegreya Sans SC', sans-serif;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+    }
+
+    .subtitle-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .subtitle {
+      font-family: Roboto;
+      font-size: 0.8em;
+      margin-bottom: 1em;
+
+      .subtitle-label {
+        font-weight: bold;
+        color: #828282;
+        font-size: 1.2em;
+        font-family: 'Alegreya Sans SC', sans-serif;
+      }
+
+      .subtitle-content {
+        font-size: 1.8em;
+      }
+    }
+
+    .subtitle:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .items {
+    .item {
+      padding: 13px 15px 13px 15px;
+
+      .item-header {
+        margin-bottom: 0.5em;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+
+      .inline-info-container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .inline-info-label {
+        font-weight: bold;
+        color: #828282;
+        font-size: 1.2em;
+        font-family: 'Alegreya Sans SC', sans-serif;
+      }
+
+      .inline-info-content {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
