@@ -37,30 +37,41 @@
   }
 
   .items {
+    .items-title {
+      font-family: 'Alegreya Sans SC', sans-serif;
+      font-weight: bold;
+      margin-bottom: 0.2em;
+    }
+
+    .items-container {
+      box-sizing: border-box;
+      border-radius: 5px;
+      margin-bottom: 12px;
+      background-color: #dcc7ab;
+    }
+
     .item {
       padding: 13px 15px 13px 15px;
 
-      .item-header {
-        margin-bottom: 0.5em;
-        font-family: 'Alegreya Sans SC', sans-serif;
-        font-weight: bold;
-        font-size: 1.5em;
-      }
-
-      .inline-info-container {
+      .inline-info {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 0.5em;
+        border-bottom: 1px solid;
+        padding-bottom: 0.2em;
       }
 
-      .inline-info-label {
-        font-weight: bold;
-        color: #828282;
-        font-size: 1.2em;
-        font-family: 'Alegreya Sans SC', sans-serif;
+      .inline-info-content:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
       }
 
       .inline-info-content {
-        font-size: 1.5em;
+        font-size: 1em;
+      }
+
+      .big {
+        font-size: 1.2em;
       }
     }
   }
